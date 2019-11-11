@@ -1,0 +1,35 @@
+body{
+  background: url(https://i.postimg.cc/YC3Bht8k/107157486-students8.jpg)fixed no-repeat center center;
+  background-size: cover;
+}
+.form-view{
+  max-width:80%;
+  left:50%;
+  position: absolute;
+  background-color: lightcyan;
+  padding: 50px;
+  transform: translateX(-50%);
+}
+header h1{
+  text-align: center;
+}
+header p{
+  text-align: center;
+  font-style: italic;
+}
+.form-elements{
+  padding:20px;
+}
+#name,#email,#number{
+  width:100%;
+}
+#submit{
+  display: block;
+  margin: auto;
+  padding: 10px 24px;
+  font-size: 15px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+

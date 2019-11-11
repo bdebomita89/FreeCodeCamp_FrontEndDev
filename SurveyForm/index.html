@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1.0">
+			<title>Survey Form</title>
+			<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="form-view">
+		 <header>
+			<h1 id="title">Student Survey Form</h1>
+			<p id="description">Please provide your valuable feedback</p>
+		 </header>
+		 <form id="survey-form">
+			 <div class="form-elements">
+				<label for="name" id="name-label"><strong>Name:</strong></label>
+				<input type="text" name="name" id="name" placeholder="Enter your name" required/>
+			 </div>
+			 <div class="form-elements">
+				<label for="email" id="email-label"><strong>Email:</strong></label>
+				<input type="email" name="email" id="email" placeholder="Enter your email" required/>
+			</div>
+			<div class="form-elements">
+				 <label for="number" id="number-label"><strong>Age:</strong></label>
+				<input type="number" name="number" id="number" min="1" max="99" placeholder="Enter your age between 1 and 99"/>
+			</div> 
+			<div class="form-elements">
+					<label for="dropdown" id="dropdown-label"><strong>Study Options:</strong></label>
+					<select name="dropdown" id="dropdown">
+						<option value="engineering">Engineering</option>
+						<option value="economics" selected>Economics</option>
+						<option value="law">Law</option>
+						<option value="business">Business</option>
+					</select>
+			</div>
+			<div class="form-elements">
+					<label for="gender" id="radio-label"><strong>Gender:</strong></label>
+					<input type="radio" name="gender" value="male" checked> Male
+					<input type="radio" name="gender" value="female"> Female
+					<input type="radio" name="gender" value="other"> Other
+			</div>
+			<div class="form-elements">
+					<label for="checkoption" id="checkbox-label"><strong>Optional Services:</strong></label>
+					<input type="checkbox" name="checkoption" value="library" checked> Library
+					<input type="checkbox" name="checkoption" value="stipend"> Stipend
+					<input type="checkbox" name="checkoption" value="hostel"> Hostel
+                    <input type="checkbox" name="checkoption" value="playground"> Playground
+				</div>
+			<div class="form-elements">
+					<label for="textoption" id="textarea-label"><strong>Enter comments or feedback:</strong></label><br>
+					<textarea name="textoption" id="textoption" placeholder="Enter your comments" rows="4" cols="50"></textarea>
+			</div> 	
+			<div class="form-elements">
+			  <button type="submit" id="submit" value="submit">Submit</button>
+			</div> 
+		 </form>
+        </div>
+	</body>
+</html>
